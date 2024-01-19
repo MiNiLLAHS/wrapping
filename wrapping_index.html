@@ -19,6 +19,8 @@
             text-align: center;
             display: flex;
             max-width: 50%;
+            margin-top: 10px;
+            margin-bottom: 5px;
         }
 
         .wrapping_label {
@@ -42,9 +44,8 @@
         }
 
         .selectable ul {
-            text-align: left;
+            text-align: center;
             list-style: none;
-            padding-left: 33%;
         }
 
         .selectable ul li a, a:visited {
@@ -53,9 +54,8 @@
         }
 
         .cost {
-            text-align: left;
+            text-align: center;
             padding-top: 25px;
-            padding-left: 21%;
         }
 
         .wrapping {
@@ -63,7 +63,7 @@
         }
 
         .wrapping_number {
-            max-width: 10%;
+            max-width: 200px;
             padding-left: 20%;
         }
 
@@ -73,22 +73,22 @@
 
         .package {
             font-size: xx-large;
-            text-align: center;
-            margin: 30px 0px 0px 80px;
+            text-align: left;
+            margin: 40px 0px 0px 30px;
             text-shadow: 3px 4px 3px rgb(252, 167, 180);
         }
 
         .sticker {
             font-size: xx-large;
-            text-align: center;
-            margin: 30px 0px 0px 150px;
+            text-align: left;
+            margin: 50px 0px 0px 30px;
             text-shadow: 3px 4px 3px rgb(252, 167, 180);
         }
 
         .message {
             font-size: xx-large;
-            text-align: center;
-            margin: 30px 0px 0px 100px;
+            text-align: left;
+            margin: 50px 0px 0px 30px;
             text-shadow: 3px 4px 3px rgb(252, 167, 180);
         }
 
@@ -150,16 +150,42 @@
             margin-bottom: 50px;
         }
 
+        /* メディアクエリ設定 */
+        @media screen and (max-width: 768px) {
+            .cost h2{
+                font-size: small;
+            }
+
+            .wrapping_number {
+                max-width: 100px;
+            }
+
+            .package {
+                font-size: large;
+            }
+
+            .sticker {
+                font-size: large;
+            }
+
+            .message {
+                font-size: large;
+            }
+
+            .order h1 {
+                font-size: large;
+            }
+        }
     </style>
 </head>
 <body>
     <header>
         <div class="toppage wrapper">
-            <a href="https://item.rakuten.co.jp/kenkei0729/c/"><img src="/Users/sasakihironori/workspace/shoukenbidou_wrapping/images/笑健美堂トップ.jpg" alt="笑健美堂バナー"></a>
-            <a href="https://item.rakuten.co.jp/kenkei0729/c/0000000152/"><img src="/Users/sasakihironori/workspace/shoukenbidou_wrapping/images/ラッピング対象商品.jpg" alt="ラッピング対象商品バナー"></a>        
+            <a href="https://item.rakuten.co.jp/kenkei0729/c/"><img src="https://image.rakuten.co.jp/kenkei0729/cabinet/10060024/imgrc0100371833.jpg" alt="笑健美堂バナー"></a>
+            <a href="https://item.rakuten.co.jp/kenkei0729/c/0000000152/"><img src="https://image.rakuten.co.jp/kenkei0729/cabinet/10060024/imgrc0100371831.jpg" alt="ラッピング対象商品バナー"></a>        
         </div>
         <div class="wrapping_label">
-            <img src="/Users/sasakihironori/workspace/shoukenbidou_wrapping/images/ラッピング.jpg" alt="ラッピング"></a>
+            <img src="https://image.rakuten.co.jp/kenkei0729/cabinet/10060024/imgrc0100371830.jpg" alt="ラッピング"></a>
         </div>
     </header>
     <div class="storemessage">
@@ -169,87 +195,87 @@
         <h2>3つの選べるデザイン</h2>
         <h2>
             <ul>
-                <li><a href="#package">1.包装材　　　　　　　　3種類から選べる</a></li>
-                <li><a href="#sticker">2.バレンタインシール　　2種類から選べる</a></li>
-                <li><a href="#message">3.メッセージカード　　　8種類から選べる</a></li>
+                <li><a href="#package">1.包装材　　　　　　　3種類</a></li>
+                <li><a href="#sticker">2.バレンタインシール　2種類</a></li>
+                <li><a href="#message">3.メッセージカード　　8種類</a></li>
             </ul>
         </h2>
     </div>
     <div class="cost">
-        <h3>
+        <h2>
             ラッピング価格は1ラッピングにつき150円(税込)になります。<br>
-            複数のラッピングをご注文の場合、150円(ラッピング代)×ラッピングの個数がラッピング代になります。<br>
-            例）2個の商品をご注文の場合<br>
-            　・1個ずつ個別にラッピングするなら：ラッピング代＝150×2＝300円(税込)<br>
-            　・2個をまとめてラッピングするなら：ラッピング代＝150×1＝150円(税込)<br>
-        </h3>
+            複数のラッピングをご注文の場合、<br>150円×ラッピングの個数がラッピング代になります。<br>
+            例）2個の商品をご注文の場合のラッピング代<br>
+            　・1個ずつ個別にラッピングするなら：150×2＝300円(税込)<br>
+            　・2個をまとめてラッピングするなら：150×1＝150円(税込)<br>
+        </h2>
     </div>
     <div class="wrapping">
         <div id="package" class="wrapping_service">
-            <img class="wrapping_number" src="/Users/sasakihironori/workspace/shoukenbidou_wrapping/images/番号_1.png" alt="no.1">
-            <p class="package">梱包材<br>ネイビー / レッド / ブラウン</p>
+            <img class="wrapping_number" src="https://image.rakuten.co.jp/kenkei0729/cabinet/10060024/imgrc0100371835.jpg" alt="no.1">
+            <p class="package">包装材<br>ネイビー / レッド / ブラウン</p>
         </div>
         <div class="wrapping_img1">
-            <img src="/Users/sasakihironori/workspace/shoukenbidou_wrapping/images/ラッピング方法.jpg" alt="">
+            <img src="https://image.rakuten.co.jp/kenkei0729/cabinet/10060024/imgrc0100371832.jpg" alt="">
         </div>
 
     </div>
     <div class="wrapping">
         <div id="sticker" class="wrapping_service">
-            <img class="wrapping_number" src="/Users/sasakihironori/workspace/shoukenbidou_wrapping/images/番号_2.png" alt="no.2">
+            <img class="wrapping_number" src="https://image.rakuten.co.jp/kenkei0729/cabinet/10060024/imgrc0100371836.jpg" alt="no.2">
             <p class="sticker">バレンタインシール<br>レッド / ブラウン</p>
         </div>
         <div class="wrapping_img2">
-            <img src="/Users/sasakihironori/workspace/shoukenbidou_wrapping/images/シール_レッド.jpg" alt="">
-            <img src="/Users/sasakihironori/workspace/shoukenbidou_wrapping/images/シール_ブラウン.jpg" alt="">
+            <img src="https://image.rakuten.co.jp/kenkei0729/cabinet/10060024/imgrc0100371829.jpg" alt="">
+            <img src="https://image.rakuten.co.jp/kenkei0729/cabinet/10060024/imgrc0100371828.jpg" alt="">
         </div>
     </div>
     <div class="wrapping">
         <div id="message" class="wrapping_service">
-            <img class="wrapping_number" src="/Users/sasakihironori/workspace/shoukenbidou_wrapping/images/番号_3.png" alt="no.3">
-            <p class="message">メッセージカード (55×91mm)<br>8種類のお気持ちから選べます</p>
+            <img class="wrapping_number" src="https://image.rakuten.co.jp/kenkei0729/cabinet/10060024/imgrc0100371837.jpg" alt="no.3">
+            <p class="message">メッセージカード (55×91mm)<br>8種類から選べます</p>
         </div>
         <div class="wrapping_img3">
             <div>
-                <img class="card" style="margin-right: 20px;" src="/Users/sasakihironori/workspace/shoukenbidou_wrapping/images/カード_いつもありがとう.jpg" alt="">
-                <img class="card" style="margin-left: 20px;" src="/Users/sasakihironori/workspace/shoukenbidou_wrapping/images/カード_感謝の気持ちです.jpg" alt="">
+                <img class="card" style="margin-right: 20px;" src="https://image.rakuten.co.jp/kenkei0729/cabinet/10060024/imgrc0100371821.jpg" alt="">
+                <img class="card" style="margin-left: 20px;" src="https://image.rakuten.co.jp/kenkei0729/cabinet/10060024/imgrc0100371826.jpg" alt="">
             </div>
             <div>
-                <img class="card" style="margin-right: 20px;" src="/Users/sasakihironori/workspace/shoukenbidou_wrapping/images/カード_これからもよろしくお願いします.jpg" alt="">
-                <img class="card" style="margin-left: 20px;" src="/Users/sasakihironori/workspace/shoukenbidou_wrapping/images/カード_大変お世話になりました.jpg" alt="">
+                <img class="card" style="margin-right: 20px;" src="https://image.rakuten.co.jp/kenkei0729/cabinet/10060024/imgrc0100371825.jpg" alt="">
+                <img class="card" style="margin-left: 20px;" src="https://image.rakuten.co.jp/kenkei0729/cabinet/10060024/imgrc0100371827.jpg" alt="">
             </div>
             <div>
-                <img class="card" style="margin-right: 20px;" src="/Users/sasakihironori/workspace/shoukenbidou_wrapping/images/カード_お誕生日おめでとうございます.jpg" alt="">
-                <img class="card" style="margin-left: 20px;" src="/Users/sasakihironori/workspace/shoukenbidou_wrapping/images/カード_HappyBirthday.jpg" alt="">
+                <img class="card" style="margin-right: 20px;" src="https://image.rakuten.co.jp/kenkei0729/cabinet/10060024/imgrc0100371822.jpg" alt="">
+                <img class="card" style="margin-left: 20px;" src="https://image.rakuten.co.jp/kenkei0729/cabinet/10060024/imgrc0100371820.jpg" alt="">
             </div>
             <div>
-                <img class="card" style="margin-right: 20px;" src="/Users/sasakihironori/workspace/shoukenbidou_wrapping/images/カード_たくさんの笑顔に囲まれますように.png" alt="">
-                <img class="card" style="margin-left: 20px;" src="/Users/sasakihironori/workspace/shoukenbidou_wrapping/images/カード_ご結婚おめでとうございます.jpg" alt="">
+                <img class="card" style="margin-right: 20px;" src="https://image.rakuten.co.jp/kenkei0729/cabinet/10060024/imgrc0100371824.jpg" alt="">
+                <img class="card" style="margin-left: 20px;" src="https://image.rakuten.co.jp/kenkei0729/cabinet/10060024/imgrc0100371823.jpg" alt="">
             </div>
         </div>
     </div>
     <div class="order">
         <h1>ラッピングのお申込み手順</h1>
         <div>
-            <img src="/Users/sasakihironori/workspace/shoukenbidou_wrapping/images/申込み手順_1.jpg" alt="">
+            <img src="https://image.rakuten.co.jp/kenkei0729/cabinet/10060024/imgrc0100371834.jpg" alt="">
         </div>
         <div class="triangle"></div>
         <div>
-            <img src="/Users/sasakihironori/workspace/shoukenbidou_wrapping/images/申込み手順_2.jpg" alt="">
+            <img src="https://image.rakuten.co.jp/kenkei0729/cabinet/10060024/imgrc0100371834.jpg" alt="">
         </div>
         <div class="triangle"></div>
         <div>
-            <img src="/Users/sasakihironori/workspace/shoukenbidou_wrapping/images/申込み手順_3.jpg" alt="">
+            <img src="https://image.rakuten.co.jp/kenkei0729/cabinet/10060024/imgrc0100371834.jpg" alt="">
         </div>
         <div class="triangle"></div>
         <div>
-            <img src="/Users/sasakihironori/workspace/shoukenbidou_wrapping/images/申込み手順_4.jpg" alt="">
+            <img src="https://image.rakuten.co.jp/kenkei0729/cabinet/10060024/imgrc0100371834.jpg" alt="">
         </div>
     </div>
     <footer>
         <div class="toppage wrapper">
-            <a href="https://item.rakuten.co.jp/kenkei0729/c/"><img src="/Users/sasakihironori/workspace/shoukenbidou_wrapping/images/笑健美堂トップ.jpg" alt="笑健美堂バナー"></a>
-            <a href="https://item.rakuten.co.jp/kenkei0729/c/0000000152/"><img src="/Users/sasakihironori/workspace/shoukenbidou_wrapping/images/ラッピング対象商品.jpg" alt="ラッピング対象商品バナー"></a>        
+            <a href="https://item.rakuten.co.jp/kenkei0729/c/"><img src="https://image.rakuten.co.jp/kenkei0729/cabinet/10060024/imgrc0100371833.jpg" alt="笑健美堂バナー"></a>
+            <a href="https://item.rakuten.co.jp/kenkei0729/c/0000000152/"><img src="https://image.rakuten.co.jp/kenkei0729/cabinet/10060024/imgrc0100371831.jpg" alt="ラッピング対象商品バナー"></a>        
         </div>
     </footer>
 </body>
